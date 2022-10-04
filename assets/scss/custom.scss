@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+//My custom variables
+$sass-primary: #cf649a;
+$sass-secondary: #212529;
+
+$font-family-base: "Satisfy", cursive;
+
+@import "../../node_modules/bootstrap/scss/variables";
+
+//My custom maps
+$sass-themes: (
+  "sass-primary": $sass-primary,
+  "sass-secondary": $sass-secondary,
+);
+
+$theme-colors: map-merge($theme-colors, $sass-themes);
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/buttons";
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+.card-sass {
+  @extend .card;
+
+  --#{$prefix}card-bg: #{$sass-secondary};
+  --#{$prefix}card-color: #{$white};
+}
