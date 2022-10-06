@@ -33,9 +33,7 @@ $theme-colors: map-merge($theme-colors, $sass-themes);
 
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
-.card-sass {
-  @extend .card;
-
-  --#{$prefix}card-bg: #{$sass-secondary};
-  --#{$prefix}card-color: #{$white};
+.card {
+  @extend .bg-dark;
+  @extend .text-light;
 }
