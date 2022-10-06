@@ -36,4 +36,8 @@ $theme-colors: map-merge($theme-colors, $sass-themes);
 .card {
   @extend .bg-dark;
   @extend .text-light;
+
+  > img {
+    max-width: 300px;
+  }
 }

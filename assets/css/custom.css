@@ -5546,4 +5546,7 @@ progress {
   .d-print-none {
     display: none !important;
   }
+}
+.card > img {
+  max-width: 300px;
 }/*# sourceMappingURL=custom.css.map */
